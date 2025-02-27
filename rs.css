@@ -1,0 +1,246 @@
+/* rs.css */
+*{ 
+    margin: 0%;
+    padding: 0%;
+    /* text-align: center; */
+    text-transform: capitalize;
+}
+header{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    transition: background-color 0.4s ease-in-out;
+    backdrop-filter: blur(50px);
+    
+    
+}
+header.scrolled{
+    background-color: black;
+    
+}
+.logo{
+    background-color: aliceblue;
+    height: 150px;
+    box-shadow: inset;
+    border-radius: 0 0 15% 15%;
+    margin-left: 75px;
+    margin-right: 250px;
+    padding: 10px;
+    position: absolute;
+}
+header .logo {
+    transition: color 0.4s ease-in-out;
+}
+header.scrolled .logo {
+    color: black;
+}
+ a, nav,.bar,ul{
+    list-style: none;
+    text-decoration: none;
+    font-style: none;
+    color: #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    text-decoration: solid;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-right: 0%;
+    font-weight: 700;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+nav{
+    margin-left: 400px;
+}
+.bg1{
+ 
+    display: flex;
+    justify-content: right;
+    color: white;
+    font-size: 200%;
+    padding-top:  250px ;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-style: italic;
+}
+
+.bg1 p{
+    color:gold;
+}
+.bg{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./non-veg/hyd_biryani.jpg);
+    position: relative;
+    background-position:center;
+    background-size: cover;
+    margin: 0%;
+}
+ul li ul.dropdown li{
+    display: block;
+    padding: 5px 10px;  
+}
+ul li ul.dropdown{
+    width: auto;
+    margin-top: 0%;
+    backdrop-filter: blur(40%);
+    position: absolute;
+    z-index: 999;
+    display: none;
+    margin: 30px 30px;
+    background-color: rgba(223, 27, 27, 0.973);
+    border-radius: 10px;
+    border: none;
+    list-style: circle;
+}
+ul li:hover ul.dropdown{
+    display: block;
+}
+a:hover{
+    color: #ff6347;
+}
+ul li ul.dropdown li:hover{
+    border: 2px solid white;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+ul li ul.dropdown {
+    background-color: rgba(50, 50, 50, 0.95); /* Darker background with transparency */
+    border: 1px solid #444; /* Subtle border */
+}
+ul li ul.dropdown li:hover {
+    border: 2px solid #ff6347; /* Consistent with link hover color */
+}
+
+body{
+    background-color: #444;
+}
+/* .vs1:hover{
+    /* transform: scale(1.01);
+    transform: rotate(45deg); */
+    /* transform: scale(1.2) rotate(30deg) translate(50px, 20px); 
+    transition: transform 0.3s ease;
+&:hover {
+  transform: scale(1.01);
+}
+} */
+
+.input {
+    text-align: center;
+    margin: 5% 20%;
+    border-radius: 10px;
+    background-color: rgb(143, 141, 136);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.input1 {
+    padding: 10px 150px 10px 10px;
+    margin-left: -30px;
+    font-size: larger;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+.input2 {
+    padding: 10px 50px 10px 10px;
+    margin: 10px 50px 10px 20px;
+    font-size: larger;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+button {
+    padding: 10px 20px 10px 50px;
+    font-size: larger;
+    margin-right: -20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745; /* Green background for button */
+    color: white; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+.bill{
+    display: none;
+    border: 1px solid black;
+    margin: 5% 20%;
+    padding:  3% 3%;
+    border-radius: 10px;
+    background-color: #eaeaea;
+ }
+ .bill0{
+    padding-right: 4%;
+    /* padding-left: 2%; */
+    font-size: larger;
+
+ }
+ .bill1{
+    padding-right: 4%;
+    /* padding-left: 2%; */
+    font-size: larger;
+ }
+ .x{
+    margin-right: 10px;
+ }
+ .bill12{
+    padding-right: 0%;
+    font-size: larger;
+    align-items: end;
+    margin-left: 28%;
+ }
+ .total{
+    text-align: end;
+    /* font-size: larger; */
+ }
+.input{
+    text-align: center;
+    margin: 5% 20%;
+    border-radius: 10px;
+    background-color: rgb(143, 141, 136);
+    padding: 10px;
+}
+.input1{
+    padding: 10px 200px 10px 10px;
+    margin:10px;
+    font-size: larger;
+}
+.input2{
+    padding: 10px 10px 10px 10px;
+    margin:10px;
+    font-size: larger;
+}
+span3{
+    color: red;
+    font-size: larger;
+}
+
+
+.py-5{
+    display: flex;
+    justify-content: space-around;
+    border: 1pxsolid black;
+    /* border-radius: 5px; */
+    background-color: black;
+    color: rgb(194, 229, 229);
+    text-align: start;
+    /* margin: 10px; */
+    line-height: 10px;
+    font-size: large;
+    text-transform: capitalize;
+}
+.f1{
+    text-align: start;
+    margin: 20px;
+    padding: 20px;
+    text-transform: capitalize;
+}
+.fa-brands{
+    font-size: xx-large;
+}
+.f2{
+    font-size: xx-large;
+}

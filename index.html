@@ -1,0 +1,1231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="rs.css">
+    <link rel="stylesheet" href="suops.css">
+    <link rel="stylesheet" href="non_main.css">
+    <link rel="stylesheet" href="non_start.css">
+    <link rel="stylesheet" href="veg_main.css">
+    <link rel="stylesheet" href="veg_start.css">
+    <link rel="stylesheet" href="desert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <script>
+        window.onload = function () {
+          alert("This website is designed for desktops or larger devices. It may not appear properly on smaller screens. Please visit us on a desktop for the best experience.");
+        };
+    </script>
+      
+    <main class="bg">
+        <header>
+            <div class="logo">
+                <a href="Home.html"></a><img src="logo-dedelicieux-vertical.png" height="150px", width="200px"></a>
+            </div>
+            <nav>
+                <ul>
+                    <li class="items">
+                        <a href="#">soups</a>
+                        <ul class="dropdown">
+                            <li onclick="borscht_soup()">borscht-soup(veg)</li>
+                            <li onclick="cream_of_tomato()">cream-of-tomato-soup(veg)</li>
+                            <li onclick="french_onion_soup()">french-onion-soup(veg)</li>
+                            <li onclick="itaalian_wedding_soup()">itaalian-wedding-soup(veg)</li>
+                            <li onclick="lentil_soup()">lentil-soup(veg)</li>
+                            <li onclick="minestrone_soup()">minestrone(veg)</li>
+                            <li onclick="tom_yum_soup()">tom-yum-soup(veg)</li>
+                            <li onclick="wild_mushroom_soup()">wild-mushroom-soup(veg)</li>
+                            <li onclick="chicken_tortilla_soup()">chicken-tortilla-soup</li>
+                            <li onclick="egg_dro_soup()">egg-dro-soup</li>
+                        </ul>
+                    </li>
+                    <li class="items">
+                        <a href="#">veg-starters</a>
+                        <ul class="dropdown">
+                            <li onclick="showElement('VEGS1')">baked-veg-spring-rolls</li>
+                            <li onclick="showElement('VEGS2')">chilli-panner-dry</li>
+                            <li onclick="showElement('VEGS3')">gobi-manchuriya</li>
+                            <li onclick="showElement('VEGS4')">panner-tikka-skewers</li>
+                            <li onclick="showElement('VEGS5')">stuffed-mushrooms</li>
+                            <li onclick="showElement('VEGS6')">veg-pa-choistir-fry</li>
+                            <li onclick="showElement('VEGS7')">veg-manchuriya</li>
+                            <li onclick="showElement('VEGS8')">veg-pakoda</li>
+                            <li onclick="showElement('VEGS9')">vegetable-tempura</li>
+                            <li onclick="showElement('VEGS10')">hakka-noodles</li>
+                        </ul>
+                    </li>
+                    <li class="items">
+                        <a href="#">(non-veg)starters</a>
+                        <ul class="dropdown">
+                            <li onclick="showElement('NON_VEGS1')">chicken-scekh-kabab</li>
+                            <li onclick="showElement('NON_VEGS2')">chicken-satay</li>
+                            <li onclick="showElement('NON_VEGS3')">chicken-spring-rolls</li>
+                            <li onclick="showElement('NON_VEGS4')">chilli-prawns</li>
+                            <li onclick="showElement('NON_VEGS5')">amritsari-fish</li>
+                            <li onclick="showElement('NON_VEGS6')">sesame-chicken</li>
+                            <li onclick="showElement('NON_VEGS7')">spicy-chicken-wings</li>
+                            <li onclick="showElement('NON_VEGS8')">stuffed-crabs</li>
+                            <li onclick="showElement('NON_VEGS9')">szechuan-chicken</li>
+                            <li onclick="showElement('NON_VEGS10')">hakka-noodles-with-chicken</li>
+                        </ul>
+                    </li>
+                    <li class="items">
+                        <a href="#">main-course(veg)</a>
+                        <ul class="dropdown" style="padding: 10px 20px;">
+                            <li onclick="showElement('VEG_main1')">bagara-rice</li>
+                            <li onclick="showElement('VEG_main2')">white-rice</li>
+                            <li onclick="showElement('VEG_main3')">sambar-rice</li>
+                            <li onclick="showElement('VEG_main4')">curd-rice</li>
+                            <li onclick="showElement('VEG_main5')">panner-rice</li>
+                            <li onclick="showElement('VEG_main6')">mushroom-rice</li>
+                            <li onclick="showElement('VEG_main7')">hyd-veg-biryani</li>
+                            <li onclick="showElement('VEG_main8')">veg-dum-biryani</li>
+                            <li onclick="showElement('VEG_main9')">kashmiri-biryani</li>
+                            <li onclick="showElement('VEG_main10')">subz-biryani</li>
+                            <li onclick="showElement('VEG_main11')">gongura-chutney</li>
+                            <li onclick="showElement('VEG_main12')">tomato-dal</li>
+                        </ul>
+                    </li>
+                    <li class="items">
+                        <a href="#">main-course(non-veg)</a>
+                        <ul class="dropdown">
+                            <li onclick="showElement('NON_VEG_main1')">hyd-biryani</li>
+                            <li onclick="showElement('NON_VEG_main2')">chettinad-biryani</li>
+                            <li onclick="showElement('NON_VEG_main3')">ambur-mutton-biryani</li>
+                            <li onclick="showElement('NON_VEG_main4')">dum-biryani</li>
+                            <li onclick="showElement('NON_VEG_main5')">potlam-biryani</li>
+                            <li onclick="showElement('NON_VEG_main6')">mutton-curry</li>
+                            <li onclick="showElement('NON_VEG_main7')">chepa-pulusu </li>
+                            <li onclick="showElement('NON_VEG_main8')">halem</li>
+                            <li onclick="showElement('NON_VEG_main9')">kodi-kura</li>
+                            <li onclick="showElement('NON_VEG_main10')">nihar</li>
+                            <li onclick="showElement('NON_VEG_main11')">prwan-pulusu</li>
+                            <li onclick="showElement('NON_VEG_main12')">prwan-pulav</li>
+                        </ul>
+                    </li>
+                    <li class="items">
+                        <a href="#">deserts</a>
+                        <ul class="dropdown" style="list-style: armenian;" >
+                            <li onclick="showElement('DE1')">apple-pie</li>
+                            <li onclick="showElement('DE2')">chese-cake</li>
+                            <li onclick="showElement('DE3')">classic-creamy-kunafa</li>
+                            <li onclick="showElement('DE4')">creme-brulee</li>
+                            <li onclick="showElement('DE5')">gilab-jamun</li>
+                            <li onclick="showElement('DE6')">choclate-lava-cake</li>
+                            <li onclick="showElement('DE7')">macarons</li>
+                            <li onclick="showElement('DE8')">panna-cotta</li>
+                            <li onclick="showElement('DE9')">rasmalai</li>
+                            <li onclick="showElement('DE10')">tiramisu</li>
+                            <li onclick="showElement('DE11')">tree-leches-cakes</li>
+                        </ul>
+                    </li>
+                    <!-- <li class="items"><a href="$">order here</a></li> -->
+                </ul>
+            </nav>
+
+        </header>
+        <section class="bg1">
+            <div >
+                <h2>
+
+                    "Our Legendary Biryani Awaits!"</h2>
+                    <p style="text-align: center;">"Experience the heart of Hyderabad <br>in every flavorful bite of our<br> legendary biryani!"</p> 
+            </div>
+        </section>
+    </main>  
+
+  <!-- soups -->
+
+
+    <div class="s1" id="s1">
+        
+        <div class="s1_1">
+            
+            <img src="./soops/Borscht(veg).jpg" height="300px" width="350px">
+        </div>
+        <div class="s1_11">
+            <h2>borscht-soup(<span>veg</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A vibrant, earthy beet soup served chilled or warm, garnished with fresh dill and a dollop of sour cream for added richness. </b></p>
+            <p><span>Ingredients:</span> Beets, carrots, potatoes, cabbage, herbs, and spices.</p>
+            <p><span>Serving Style:</span> Served in a deep bowl with a swirl of cream on top.</p>
+            <p><span>Item code :</span>SB1</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 189/-</i></spanb>
+            <button onclick="borschtno()"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="s2" id="s2">
+        
+        <div class="s2_1" >
+            
+            <img src="./soops/Cream_ofTomato Soup.jpg" height="300px" width="350px">
+        </div>
+        <div class="s2_12">
+            <h2>cream-of-tomato-soup(<span>veg</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Smooth and creamy with the natural sweetness of tomatoes, topped with fresh basil or a drizzle of cream. </b></p>
+            <p><span>Ingredients:</span> Onions, vegetable broth, garlic, herbs, and spices.</p>
+            <p><span>Serving Style:</span> Served hot in a mug or bowl, paired with croutons or toasted bread.</p>
+            <p><span>Item code :</span>SC2</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 209/-</i></spanb>
+            <button onclick="cream_of_tomatono()"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="s3" id="s3">
+        
+        <div class="s3_1">
+            
+            <img src="./soops/french-onion-soup-pin(veg).webp" height="300px" width="350px">
+        </div>
+        <div class="s3_12">
+            <h2>french-onion-soup(<span>veg</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A flavorful soup of caramelized onions with a hint of herbs, typically topped with toasted bread and melted cheese. </b></p>
+            <p><span>Ingredients:</span>Onions, vegetable broth, garlic, herbs, and spices. </p>
+            <p><span>Serving Style:</span>Served in a rustic bowl with a toasted cheese topping.</p>
+            <p><span>Item code :</span>SF3</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 219/-</i></spanb>
+            <button onclick="french_onion_soupno()"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="s4" id="s4">
+        
+        <div class="s4_1">
+ 
+            <img src="./soops/Italian_Wedding_Soup(veg).jpg" height="300px" width="350px">
+        </div>
+        <div class="s4_12">
+            <h2>itaalian-wedding-soup(<span>veg</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A light yet hearty soup with tender greens and small pasta, offering a delicate and refreshing taste. </b></p>
+            <p><span>Ingredients:</span> Spinach or kale, small pasta, carrots, celery, herbs.</p>
+            <p><span>Serving Style:</span> Served in a wide bowl, garnished with fresh parsley.</p>
+            <p><span>Item code :</span>SI4</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 189/-</i></spanb>
+            <button onclick="itaalian_wedding_soupno()"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="s5" id="s5">
+        
+        <div class="s5_1">
+            
+            <img src="./soops/Lentil_Soup(veg).avif" height="300px" width="350px">
+        </div>
+        <div class="s5_12">
+            <h2>lentil-soup(<span>veg</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Nutritious and filling, this soup brings a warm, earthy flavor with tender lentils and vegetables. </b></p>
+            <p><span>Ingredients:</span> Lentils, carrots, onions, garlic, herbs, and spices.</p>
+            <p><span>Serving Style:</span>erved in a rustic bowl with a drizzle of olive oil or a sprinkle of herbs.</p>
+            <p><span>Item code :</span>SL5</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 189/-</i></spanb>
+            <button onclick="lentil_soupno()"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="s6" id="s6">
+        
+        <div class="s6_1">
+            
+            <img src="./soops/Minestrone(veg).webp" height="300px" width="350px">
+        </div>
+        <div class="s6_12">
+            <h2>minestrone-soup(<span>veg</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A hearty Italian vegetable soup with beans and pasta, topped with fresh herbs.</b></p>
+            <p><span>Ingredients:</span>Mixed vegetables, beans, pasta, tomatoes, herbs.</p>
+            <p><span>Serving Style:</span> Served hot in a large bowl, garnished with grated Parmesan.</p>
+            <p><span>Item code :</span>SM6</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 189/-</i></spanb>
+            <button onclick="minestrone_soupno()"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="s7" id="s7">
+        
+        <div class="s7_1">
+            
+            <img src="./soops/tom-yum-soup(non).avif" height="300px" width="350px">
+        </div>
+        <div class="s7_12">
+            <h2>tom-yum-soup(<span>non-veg</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A classic Thai soup, spicy and sour with aromatic herbs, delivering an exciting burst of flavors. </b></p>
+            <p><span>Ingredients:</span> Lemongrass, lime leaves, galangal, mushrooms, chili, herbs.</p>
+            <p><span>Serving Style:</span> Served in a deep bowl with lime and fresh herbs on top.</p>
+            <p><span>Item code :</span>ST7</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 199/-</i></spanb>
+            <button onclick="tom_yum_soupno()"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="s8" id="s8">
+        
+        <div class="s8_1">
+            
+            <img src="./soops/Wild_Mushroom_Soup.jpg" height="300px" width="350px">
+        </div>
+        <div class="s8_12">
+            <h2>wild-mushroom-soup(<span>veg</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Rich and creamy with earthy mushrooms, offering deep, comforting flavors.</b></p>
+            <p><span>Ingredients:</span> Wild mushrooms, cream, onions, garlic, herbs.</p>
+            <p><span>Serving Style:</span> Served hot with a sprinkle of chives or a swirl of cream.</p>
+            <p><span>Item code :</span>SW8</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 219/-</i></spanb>
+            <button onclick="wild_mushroom_soupno()"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="s9" id="s9">
+        
+        <div class="s9_1">
+            
+            <img src="./soops/Chicken-Tortilla-Soup-5.jpg" height="300px" width="350px">
+        </div>
+        <div class="s9_12">
+            <h2>chicken-tortilla-soup(<span>non-veg</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A robust and flavorful soup with shredded chicken, spices, and crispy tortilla strips for texture.</b></p>
+            <p><span>Ingredients:</span>Chicken, tomatoes, onions, garlic, spices, tortilla strips.</p>
+            <p><span>Serving Style:</span> Served with tortilla strips on top, a dollop of sour cream, and fresh cilantro.</p>
+            <p><span>Item code :</span>SC9</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 249/-</i></spanb>
+            <button onclick="chicken_tortilla_soupno()"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="s10" id="s10">
+        
+        <div class="s10_1">
+            
+            <img src="./soops/egg-drop-soup.avif" height="300px" width="350px">
+        </div>
+        <div class="s10_12">
+            <h2>egg-dro-soup(<span>non-veg</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A light soup with swirling egg ribbons, bringing a delicate taste with subtle seasonings.</b></p>
+            <p><span>Ingredients:</span> Eggs, broth, green onions, cornstarch, seasoning.</p>
+            <p><span>Serving Style:</span> Served in a small bowl with chopped green onions on top.</p>
+            <p><span>Item code :</span>SE10</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 149/-</i></spanb>
+            <button onclick="egg_dro_soupno()"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+
+    
+
+
+
+    <!-- veg-starters -->
+
+    <div class="vS1" id="VEGS1">
+            
+        <div class="vs1_1">
+            
+            <img src="./veg-starters/Baked-Veg-Spring-Rolls-1.webp" height="300px" width="350px">
+        </div>
+        <div class="vs1_11">
+            <h2>baked-veg-spring-<span>rolls</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Crispy and light, these spring rolls are packed with seasoned vegetables and baked to golden perfection, making for a healthier choice.</b></p>
+            <p><span>Ingredients:</span> Mixed vegetables, cabbage, carrots, bell peppers, spices.</p>
+            <p><span>Serving Style:</span> Served hot with a side of sweet chili or soy dipping sauce.</p>
+            <p><span>Item code :</span>VSB1</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 149/-</i></spanb>
+            <button onclick="hideelement('VEGS1')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vs2" id="VEGS2">
+        
+        <div class="vs2_1" >
+            
+            <img src="./veg-starters/Chilli-paneer-dry-1.jpg" height="300px" width="350px">
+        </div>
+        <div class="vs2_12">
+            <h2>chilli-panner-dry(<span>wet</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Spicy and tangy, this dish has soft paneer cubes tossed in a mix of bell peppers, onions, and spicy sauces.</b></p>
+            <p><span>Ingredients:</span> Paneer, bell peppers, onions, garlic, chili sauce, soy sauce.</p>
+            <p><span>Serving Style:</span>  Served on a platter with sliced green onions and a sprinkle of sesame seeds.</p>
+            <p><span>Item code :</span>VSC2</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 179/-</i></spanb>
+            <button onclick="hideelement('VEGS2')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vs3" id="VEGS3">
+        
+        <div class="vs3_1">
+            
+            <img src="./veg-starters/Gobi Manchurian.jpg" height="300px" width="350px">
+        </div>
+        <div class="vs3_12">
+            <h2>gobi-manchuriya(<span>wet</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A popular Indo-Chinese appetizer with crispy cauliflower florets coated in a savory, spicy Manchurian sauce.</b></p>
+            <p><span>Ingredients:</span>Cauliflower, soy sauce, garlic, ginger, chili, cornstarch.</p>
+            <p><span>Serving Style:</span>Served hot with chopped green onions and a garnish of sesame seeds.</p>
+            <p><span>Item code :</span>VSG3</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 130/-</i></spanb>
+            <button onclick="hideelement('VEGS3')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vs4" id="VEGS4">
+        
+        <div class="vs4_1">
+
+            <img src="./veg-starters/paneer-tikka-skewers.jpg" height="300px" width="350px">
+        </div>
+        <div class="vs4_12">
+            <h2>panner-tikka-<span>skewers</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Marinated paneer cubes grilled to perfection, offering a smoky flavor and spiced coating.</b></p>
+            <p><span>Ingredients:</span>Paneer, yogurt, spices, bell peppers, onions.</p>
+            <p><span>Serving Style:</span> Served on skewers with a side of green chutney and lemon wedges.</p>
+            <p><span>Item code :</span>VSP4</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 229/-</i></spanb>
+            <button onclick="hideelement('VEGS4')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vs5" id="VEGS5">
+        
+        <div class="vs5_1">
+            
+            <img src="./veg-starters/Stuffed_Mushroom.jpg" height="300px" width="350px">
+        </div>
+        <div class="vs5_12">
+            <h2>stuffed-mushrooms(<span>dry</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Juicy mushroom caps filled with a savory mix of cheese and herbs, then baked until golden and tender.</b></p>
+            <p><span>Ingredients:</span>Mushrooms, cream cheese, herbs, breadcrumbs.</p>
+            <p><span>Serving Style:</span>Served hot on a platter, garnished with fresh parsley.</p>
+            <p><span>Item code :</span>VSS5</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 189/-</i></spanb>
+            <button onclick="hideelement('VEGS5')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vs6" id="VEGS6">
+        
+        <div class="vs6_1">
+            
+            <img src="./veg-starters/Veg Pak Choi Stir-fry.webp" height="300px" width="350px">
+        </div>
+        <div class="vs6_12">
+            <h2>veg-pa-choistir-fry(<span>wet</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A colorful mix of fresh vegetables stir-fried with a blend of savory sauces, offering a light and healthy starter.</b></p>
+            <p><span>Ingredients:</span> Bell peppers, carrots, broccoli, snap peas, soy sauce, garlic.</p>
+            <p><span>Serving Style:</span>Served on a hot plate, garnished with sesame seeds and green onions.</p>
+            <p><span>Item code :</span>VSV6</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 169/-</i></spanb>
+            <button onclick="hideelement('VEGS6')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vs7" id="VEGS7">
+        
+        <div class="vs7_1">
+            
+            <img src="./veg-starters/veg_manchuriya.webp" height="300px" width="350px">
+        </div>
+        <div class="vs7_12">
+            <h2>veg-manchuriya(<span>dry</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Crispy vegetable balls tossed in a spicy and tangy Manchurian sauce, a favorite Indo-Chinese dish.</b></p>
+            <p><span>Ingredients:</span>Mixed vegetables, soy sauce, garlic, ginger, chili.</p>
+            <p><span>Serving Style:</span>Served on a platter with a drizzle of sauce and spring onions.</p>
+            <p><span>Item code :</span>VSV7</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 159/-</i></spanb>
+            <button onclick="hideelement('VEGS7')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vs8" id="VEGS8">
+        
+        <div class="vs8_1">
+            
+            <img src="./veg-starters/veg_pakora.jpg" height="300px" width="350px">
+        </div>
+        <div class="vs8_12">
+            <h2>veg-pakoda(<span>dry</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A classic Indian starter, these crispy, golden fritters are made with assorted vegetables coated in seasoned chickpea flour.</b></p>
+            <p><span>Ingredients:</span>Mixed vegetables (onions, spinach, potatoes), chickpea flour, spices.</p>
+            <p><span>Serving Style:</span> Served hot with mint chutney and tamarind sauce.</p>
+            <p><span>Item code :</span>VSV8</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 119/-</i></spanb>
+            <button onclick="hideelement('VEGS8')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vs9" id="VEGS9">
+        
+        <div class="vs9_1">
+            
+            <img src="./veg-starters/vegetable-tempura.jpg" height="300px" width="350px">
+        </div>
+        <div class="vs9_12">
+            <h2>vegetable-tempura(<span>dry</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Lightly battered vegetables fried to crispy perfection, offering a delicate crunch with each bite.</b></p>
+            <p><span>Ingredients:</span>Assorted vegetables (zucchini, carrots, bell peppers), tempura batter.</p>
+            <p><span>Serving Style:</span> Served with soy sauce or tempura dipping sauce on the side.</p>
+            <p><span>Item code :</span>VSV9</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 249/-</i></spanb>
+            <button onclick="hideelement('VEGS9')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vs10" id="VEGS10">
+        
+        <div class="vs10_1">
+            
+            <img src="./veg-starters/Hakka-Noodles-2-3.jpg" height="300px" width="350px">
+        </div>
+        <div class="vs10_12">
+            <h2>hakka-noodles(<span>wet</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Thin noodles stir-fried with mixed vegetables and soy-based sauces, delivering a burst of flavors in each bite.</b></p>
+            <p><span>Ingredients:</span> Noodles, bell peppers, cabbage, carrots, soy sauce, garlic.</p>
+            <p><span>Serving Style:</span> Served hot on a wide plate, garnished with spring onions.</p>
+            <p><span>Item code :</span>VSH10</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 129/-</i></spanb>
+            <button onclick="hideelement('VEGS10')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+
+
+
+    <!-- non-veg-starters -->
+
+
+
+    <div class="nvs1" id="NON_VEGS1">
+            
+        <div class="nvs1_1">
+            
+            <img src="./non_veg_starters/Chicken Seekh Kebab.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvs1_11">
+            <h2>chicken-scekh-<span>kabab</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Juicy and spiced minced chicken skewers grilled to perfection, offering a smoky and flavorful bite.</b></p>
+            <p><span>Ingredients:</span> Minced chicken, herbs, spices, onions.</p>
+            <p><span>Serving Style:</span> Served on skewers with mint chutney and onions.</p>
+            <p><span>Item code :</span>NVSC1</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 219/-</i></spanb>
+            <button onclick="hideelement('NON_VEGS1')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvs2" id="NON_VEGS2">
+        
+        <div class="nvs2_1" >
+            
+            <img src="./non_veg_starters/Chicken_Satay.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvs2_12">
+            <h2>chicken-satay(<span>wet</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Marinated chicken skewers with a touch of sweetness and spices, typically served with a rich peanut sauce.</b></p>
+            <p><span>Ingredients:</span> Chicken, coconut milk, spices, peanut sauce.</p>
+            <p><span>Serving Style:</span> Served on skewers with a side of peanut sauce.</p>
+            <p><span>Item code :</span>NVSC2</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 239/-</i></spanb>
+            <button onclick="hideelement('NON_VEGS2')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvs3" id="NON_VEGS3">
+        
+        <div class="nvs3_1">
+            
+            <img src="./non_veg_starters/Chicken-Spring-Rolls.jpeg" height="300px" width="350px">
+        </div>
+        <div class="nvs3_12">
+            <h2>chicken-spring-(<span>rolls</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Crispy rolls filled with seasoned chicken and vegetables, offering a delightful crunch.</b></p>
+            <p><span>Ingredients:</span>Chicken, cabbage, carrots, spring roll wrappers.</p>
+            <p><span>Serving Style:</span>Served with a side of sweet chili sauce.</p>
+            <p><span>Item code :</span>NVSC3</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 179/-</i></spanb>
+            <button onclick="hideelement('NON_VEGS3')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvs4" id="NON_VEGS4">
+        
+        <div class="nvs4_1">
+
+            <img src="./non_veg_starters/Chilli-Prawns.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvs4_12">
+            <h2>chilli-prawns<span>skewers</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Succulent prawns tossed in a spicy and tangy sauce, delivering a punch of flavor.</b></p>
+            <p><span>Ingredients:</span>Prawns, chili sauce, bell peppers, green onions.</p>
+            <p><span>Serving Style:</span>Served on a bed of greens with lemon wedges.</p>
+            <p><span>Item code :</span>NVSC4</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 379/-</i></spanb>
+            <button onclick="hideelement('NON_VEGS4')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvs5" id="NON_VEGS5">
+        
+        <div class="nvs5_1">
+            
+            <img src="./non_veg_starters/Fish Amritsari.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvs5_12">
+            <h2>amritsari-fish(<span>dry</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A Punjabi specialty, with marinated fish coated in spices and fried to a golden crisp.</b></p>
+            <p><span>Ingredients:</span>Fresh fish, gram flour, spices, lemon juice.</p>
+            <p><span>Serving Style:</span>Served hot with a sprinkle of chaat masala and lemon wedges.</p>
+            <p><span>Item code :</span>NVSA5</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 389/-</i></spanb>
+            <button onclick="hideelement('NON_VEGS5')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvs6" id="NON_VEGS6">
+        
+        <div class="nvs6_1">
+            
+            <img src="./non_veg_starters/Sesame Chicken.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvs6_12">
+            <h2>sesame-chicken(<span>wet</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Crispy pieces of chicken coated in a sweet and savory sesame sauce, garnished with sesame seeds.</b></p>
+            <p><span>Ingredients:</span>Chicken, sesame seeds, soy sauce, honey.</p>
+            <p><span>Serving Style:</span>Served with a garnish of sesame seeds and green onions.</p>
+            <p><span>Item code :</span>NVSS6</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 269/-</i></spanb>
+            <button onclick="hideelement('NON_VEGS6')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvs7" id="NON_VEGS7">
+        
+        <div class="nvs7_1">
+            
+            <img src="./non_veg_starters/Spicy Chicken Wings.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvs7_12">
+            <h2>spicy-chicken-wings(<span>dry</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Tender chicken wings marinated in a spicy sauce, then fried or grilled for a bold flavor.</b></p>
+            <p><span>Ingredients:</span>Chicken wings, hot sauce, spices, garlic.</p>
+            <p><span>Serving Style:</span>Served with a side of ranch or blue cheese dip.</p>
+            <p><span>Item code :</span>NVSS7</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 199/-</i></spanb>
+            <button onclick="hideelement('NON_VEGS7')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvs8" id="NON_VEGS8">
+        
+        <div class="nvs8_1">
+            
+            <img src="./non_veg_starters/Stuffed-Crab.webp" height="300px" width="350px">
+        </div>
+        <div class="nvs8_12">
+            <h2>stuffed-crabs(<span>dry</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Fresh crab shells filled with a savory crab mixture, then baked to perfection.</b></p>
+            <p><span>Ingredients:</span> Crab meat, bread crumbs, herbs, cheese.</p>
+            <p><span>Serving Style:</span>  Served in crab shells with a lemon wedge.</p>
+            <p><span>Item code :</span>NVSS8</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 419/-</i></spanb>
+            <button onclick="hideelement('NON_VEGS8')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvs9" id="NON_VEGS9">
+        
+        <div class="nvs9_1">
+            
+            <img src="./non_veg_starters/Szechuan-Chicken.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvs9_12">
+            <h2>szechuan-chicken(<span>dry</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Fiery and flavorful chicken dish cooked with a blend of spices, chili peppers, and Szechuan sauce.</b></p>
+            <p><span>Ingredients:</span>Chicken, Szechuan sauce, bell peppers, garlic.</p>
+            <p><span>Serving Style:</span>Served with sliced green onions on top.</p>
+            <p><span>Item code :</span>NVSS9</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 249/-</i></spanb>
+            <button onclick="hideelement('NON_VEGS9')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvs10" id="NON_VEGS10">
+        
+        <div class="nvs10_1">
+            
+            <img src="./non_veg_starters/Hakka Noodles with Chicken.webp" height="300px" width="350px">
+        </div>
+        <div class="nvs10_12">
+            <h2>hakka-noodles-with-chicken(<span>wet</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Stir-fried noodles with seasoned chicken and vegetables, offering a savory and slightly spicy taste.</b></p>
+            <p><span>Ingredients:</span> Chicken, Hakka noodles, soy sauce, bell peppers, onions.</p>
+            <p><span>Serving Style:</span>Served hot with fresh green onions on top.</p>
+            <p><span>Item code :</span>NVSH10</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 209/-</i></spanb>
+            <button onclick="hideelement('NON_VEGS10')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+
+    <!-- veg-main-course -->
+
+
+    <div class="vm1" id="VEG_main1">
+            
+        <div class="vm1_1">
+            
+            <img src="./veg/Bagara-Rice.jpg" height="300px" width="350px">
+        </div>
+        <div class="vm1_11">
+            <h2>bagara-<span>rice</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A Hyderabadi specialty rice dish cooked with aromatic spices and a blend of sesame, coconut, and peanuts for a rich flavor.</b></p>
+            <p><span>Ingredients:</span> Rice, sesame seeds, coconut, peanuts, tamarind.</p>
+            <p><span>Serving Style:</span> Served hot with a side of yogurt or raita.</p>
+            <p><span>Item code :</span>VMB1</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 139/-</i></spanb>
+            <button onclick="hideelement('VEG_main1')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vm2" id="VEG_main2">
+        
+        <div class="vm2_1" >
+            
+            <img src="./veg/20230113172320-whiterice.webp" height="300px" width="350px">
+        </div>
+        <div class="vm2_12">
+            <h2>white-(<span>rice</span>)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Simple steamed rice that serves as a perfect base for any curry or dal.</b></p>
+            <p><span>Ingredients:</span>Long-grain rice, water, salt (optional).</p>
+            <p><span>Serving Style:</span> Served in a bowl with a side of ghee or pickles.</p>
+            <p><span>Item code :</span>VMW2</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 79/-</i></spanb>
+            <button onclick="hideelement('VEG_main2')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vm3" id="VEG_main3">
+        
+        <div class="vm3_1">
+            
+            <img src="./veg/sambar-sadam-3.jpg" height="300px" width="350px">
+        </div>
+        <div class="vm3_12">
+            <h2>sambar-<span>sadam</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>South Indian rice dish cooked with tangy sambar, combining lentils and vegetables for a flavorful meal.</b></p>
+            <p><span>Ingredients:</span>Rice, toor dal, tamarind, mixed vegetables, spices.</p>
+            <p><span>Serving Style:</span>Served in a bowl with a drizzle of ghee and a side of papad.</p>
+            <p><span>Item code :</span>VMS3</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 179/-</i></spanb>
+            <button onclick="hideelement('VEG_main3')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vm4" id="VEG_main4">
+        
+        <div class="vm4_1">
+
+            <img src="./veg/Curd-Rice.jpg" height="300px" width="350px">
+        </div>
+        <div class="vm4_12">
+            <h2>curd-<span>rice</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Comforting rice dish mixed with yogurt and garnished with fresh herbs, offering a cool and refreshing taste.</b></p>
+            <p><span>Ingredients:</span>Rice, yogurt, mustard seeds, curry leaves, green chili.</p>
+            <p><span>Serving Style:</span>Served with a garnish of pomegranate seeds or cucumber slices</p>
+            <p><span>Item code :</span>VMC4</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 99/-</i></spanb>
+            <button onclick="hideelement('VEG_main4')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vm5" id="VEG_main5">
+        
+        <div class="vm5_1">
+            
+            <img src="./veg/panner_rice.jpg" height="300px" width="350px">
+        </div>
+        <div class="vm5_12">
+            <h2>paneer<span>rice</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Fragrant rice with cubes of paneer and mild spices, providing a delightful and mildly spiced flavor.</b></p>
+            <p><span>Ingredients:</span>Rice, paneer, cumin seeds, green peas, spices.</p>
+            <p><span>Serving Style:</span>Served with a sprinkle of fresh coriander and raita.</p>
+            <p><span>Item code :</span>VMP5</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 189/-</i></spanb>
+            <button onclick="hideelement('VEG_main5')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vm6" id="VEG_main6">
+        
+        <div class="vm6_1">
+            
+            <img src="./veg/Mushroom-Rice-11.jpg" height="300px" width="350px">
+        </div>
+        <div class="vm6_12">
+            <h2>mushroom-<span>rice</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A flavorful rice dish with sautéed mushrooms and spices, delivering an earthy taste.</b></p>
+            <p><span>Ingredients:</span>Rice, mushrooms, garlic, onions, spices.</p>
+            <p><span>Serving Style:</span>Served with a garnish of green onions or herbs.</p>
+            <p><span>Item code :</span>VMM6</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 199/-</i></spanb>
+            <button onclick="hideelement('VEG_main6')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vm7" id="VEG_main7">
+        
+        <div class="vm7_1">
+            
+            <img src="./veg/hyd_veg-biryani.jpg" height="300px" width="350px">
+        </div>
+        <div class="vm7_12">
+            <h2>hyd-veg-<span>biryani</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Layered rice and vegetables cooked with aromatic spices in traditional Hyderabadi dum style.</b></p>
+            <p><span>Ingredients:</span>Basmati rice, mixed vegetables, saffron, spices.</p>
+            <p><span>Serving Style:</span>Served with a side of mirchi ka salan or raita.</p>
+            <p><span>Item code :</span>VMH7</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 209/-</i></spanb>
+            <button onclick="hideelement('VEG_main7')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vm8" id="VEG_main8">
+        
+        <div class="vm8_1">
+            
+            <img src="./veg/veg_dum_biryani.jpg" height="300px" width="350px">
+        </div>
+        <div class="vm8_12">
+            <h2>veg-dum-<span>biryani</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Slow-cooked biryani with marinated vegetables and rice, infused with subtle flavors.</b></p>
+            <p><span>Ingredients:</span> Basmati rice, mixed vegetables, yogurt, spices.</p>
+            <p><span>Serving Style:</span> Served in a clay pot with raita on the side.</p>
+            <p><span>Item code :</span>VMV8</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 219/-</i></spanb>
+            <button onclick="hideelement('VEG_main8')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vm9" id="VEG_main9">
+        
+        <div class="vm9_1">
+            
+            <img src="./veg/kashmiri_biryani.webp" height="300px" width="350px">
+        </div>
+        <div class="vm9_12">
+            <h2>kashmiri-<span>biryani</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A unique biryani with dried fruits and nuts, offering a mildly sweet and aromatic flavor.</b></p>
+            <p><span>Ingredients:</span> Basmati rice, dried fruits, saffron, spices.</p>
+            <p><span>Serving Style:</span>Served with a sprinkle of fried onions and raita</p>
+            <p><span>Item code :</span>VMK9</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 249/-</i></spanb>
+            <button onclick="hideelement('VEG_main9')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vm10" id="VEG_main10">
+        
+        <div class="vm10_1">
+            
+            <img src="./veg/Subz-Biryani.jpg" height="300px" width="350px">
+        </div>
+        <div class="vm10_12">
+            <h2>subz-<span>biryani</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A delightful blend of basmati rice with seasonal vegetables and fresh herbs.</b></p>
+            <p><span>Ingredients:</span> Basmati rice, mixed vegetables, spices, saffron.</p>
+            <p><span>Serving Style:</span>Served hot with mint chutney or raita.</p>
+            <p><span>Item code :</span>VMS10</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 229/-</i></spanb>
+            <button onclick="hideelement('VEG_main10')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    </div>
+    <div class="vm11" id="VEG_main11">
+        
+        <div class="vm11_1">
+            
+            <img src="./veg/gongura-chutney.jpg" height="300px" width="350px">
+        </div>
+        <div class="vm11_12">
+            <h2>gongura-<span>chutney</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Tangy and spicy chutney made from sorrel leaves, a popular side in Andhra cuisine.</b></p>
+            <p><span>Ingredients:</span>gongura (sorrel) leaves, garlic, chilies, spices.</p>
+            <p><span>Serving Style:</span>erved as a side dip for rice dishes.</p>
+            <p><span>Item code :</span>VMG11</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 69/-</i></spanb>
+            <button onclick="hideelement('VEG_main11')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="vm12" id="VEG_main12">
+        
+        <div class="vm12_1">
+            
+            <img src="./veg/tomato_dal.jpg" height="300px" width="350px">
+        </div>
+        <div class="vm12_12">
+            <h2>tomato-<span>dal</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A comforting lentil dish with tomatoes, providing a tangy flavor and creamy texture.</b></p>
+            <p><span>Ingredients:</span>Toor dal, tomatoes, spices, garlic.</p>
+            <p><span>Serving Style:</span>Served hot with a side of steamed rice.</p>
+            <p><span>Item code :</span>VMT12</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 109/-</i></spanb>
+            <button onclick="hideelement('VEG_main12')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+    </div>
+
+    
+    <!-- non-veg-main-course -->
+
+
+    <div class="nvm1" id="NON_VEG_main1">
+            
+        <div class="nvm1_1">
+            
+            <img src="./non-veg/hyd_biryani.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm1_11">
+            <h2>Hyderabadi-<span>biryani</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Iconic biryani from Hyderabad, marinated meat and rice cooked in layers with fragrant spices.</b></p>
+            <p><span>Ingredients:</span>Basmati rice, marinated chicken or mutton, saffron, spices.</p>
+            <p><span>Serving Style:</span>Served with mirchi ka salan or raita..</p>
+            <p><span>Item code :</span>NVMH1</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 229/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main1')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvm2" id="NON_VEG_main2">
+        
+        <div class="nvm2_1" >
+            
+            <img src="./non-veg/chettinad_biryani.jpg.crdownload" height="300px" width="350px">
+        </div>
+        <div class="nvm2_12">
+            <h2>chettinad-<span>biryani</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A spicy biryani with authentic Chettinad flavors, prepared with marinated chicken or mutton.</b></p>
+            <p><span>Ingredients:</span>Basmati rice, chicken/mutton, Chettinad spices, coconut milk.</p>
+            <p><span>Serving Style:</span> Served with a boiled egg and yogurt.</p>
+            <p><span>Item code :</span>NVMC2</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 379/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main2')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvm3" id="NON_VEG_main3">
+        
+        <div class="nvm3_1">
+            
+            <img src="./non-veg/Ambur-Mutton-Biryani.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm3_12">
+            <h2>Ambur-Mutton-<span>Biryani</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A unique Tamil Nadu biryani, cooked with seeraga samba rice and tender mutton.</b></p>
+            <p><span>Ingredients:</span> Seeraga samba rice, mutton, yogurt, spices.</p>
+            <p><span>Serving Style:</span>Served with raita and boiled eggs.</p>
+            <p><span>Item code :</span>NVMA3</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 379/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main3')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvm4" id="NON_VEG_main4">
+        
+        <div class="nvm4_1">
+
+            <img src="./non-veg/dum.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm4_12">
+            <h2>Dum-<span>Biryani</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Traditional slow-cooked biryani with layers of spiced meat and rice, prepared in a sealed pot.</b></p>
+            <p><span>Ingredients:</span>Basmati rice, marinated meat, ghee, spices.</p>
+            <p><span>Serving Style:</span>Served with a side of raita or salad.</p>
+            <p><span>Item code :</span>NVMD4</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 299/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main4')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvm5" id="NON_VEG_main5">
+        
+        <div class="nvm5_1">
+            
+            <img src="./non-veg/potlam_mutton_keema_biryani.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm5_12">
+            <h2>mixed-Potlam-<span>Biryani</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Unique biryani wrapped in banana leaves, giving it a distinct aroma and flavor.</b></p>
+            <p><span>Ingredients:</span>Basmati rice, marinated meat, banana leaves, spices.</p>
+            <p><span>Serving Style:</span>Wrapped and served in banana leaves with raita.</p>
+            <p><span>Item code :</span>NVMM5</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 489/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main5')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvm6" id="NON_VEG_main6">
+        
+        <div class="nvm6_1">
+            
+            <img src="./non-veg/mutton_curry.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm6_12">
+            <h2>Mutton-<span> Curry</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Tender mutton pieces cooked in a rich, spicy gravy, perfect for rice or naan.</b></p>
+            <p><span>Ingredients:</span>Mutton, onion, tomatoes, spices, herbs.</p>
+            <p><span>Serving Style:</span>Served with steamed rice or paratha..</p>
+            <p><span>Item code :</span>NVMM6</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 229/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main6')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvm7" id="NON_VEG_main7">
+        
+        <div class="nvm7_1">
+            
+            <img src="./non-veg/chepa_pulusu.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm7_12">
+            <h2>Chepa-<span> Pulusu</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Traditional Andhra fish curry with tamarind and spices, offering a tangy and spicy flavor.</b></p>
+            <p><span>Ingredients:</span>Fish, tamarind, curry leaves, chili powder, spices.</p>
+            <p><span>Serving Style:</span>Served with steamed rice</p>
+            <p><span>Item code :</span>NVMC7</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 209/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main7')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvm8" id="NON_VEG_main8">
+        
+        <div class="nvm8_1">
+            
+            <img src="./non-veg/halem.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm8_12">
+            <h2><span>Haleem</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A slow-cooked stew of meat, lentils, and wheat, popular during Ramadan.</b></p>
+            <p><span>Ingredients:</span>Meat, lentils, wheat, spices, ghee.</p>
+            <p><span>Serving Style:</span>Garnished with fried onions, lemon, and served hot.</p>
+            <p><span>Item code :</span>NVMH8</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 219/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main8')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvm9" id="NON_VEG_main9">
+        
+        <div class="nvm9_1">
+            
+            <img src="./non-veg/kodi_kura.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm9_12">
+            <h2>Kodi-<span> Kura</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A spicy Andhra chicken curry, rich in spices and bursting with flavor.</b></p>
+            <p><span>Ingredients:</span>Chicken, onion, tomatoes, ginger-garlic paste, spices.</p>
+            <p><span>Serving Style:</span>Served with steamed rice or roti.</p>
+            <p><span>Item code :</span>NVMK9</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 189/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main9')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvm10" id="NON_VEG_main10">
+        
+        <div class="nvm10_1">
+            
+            <img src="./non-veg/nihar.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm10_12">
+            <h2><span>Nihari</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>A flavorful slow-cooked stew with tender meat, originating from Mughlai cuisine.</b></p>
+            <p><span>Ingredients:</span>Beef or mutton, spices, herbs.</p>
+            <p><span>Serving Style:</span>Served with naan and garnished with fried onions.</p>
+            <p><span>Item code :</span>NVMH10</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 269/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main10')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    </div>
+    <div class="nvm11" id="NON_VEG_main11">
+        
+        <div class="nvm11_1">
+            
+            <img src="./non-veg/prawn_pulusu.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm11_12">
+            <h2>Prawn-<span>Pulusu</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Andhra-style prawn curry with tangy tamarind and spices for a bold flavor.</b></p>
+            <p><span>Ingredients:</span>Prawns, tamarind, garlic, curry leaves, spices.</p>
+            <p><span>Serving Style:</span>Served with steamed rice.</p>
+            <p><span>Item code :</span>NVMP11</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 269/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main11')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="nvm12" id="NON_VEG_main12">
+        
+        <div class="nvm12_1">
+            
+            <img src="./non-veg/Prawn-Pulao-2-3.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm12_12">
+            <h2>Prawn-<span>Pulav</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Aromatic pulav with prawns, spices, and basmati rice, offering a delicate flavor.</b></p>
+            <p><span>Ingredients:</span> Basmati rice, prawns, ghee, spices.</p>
+            <p><span>Serving Style:</span>Served with a side of raita.</p>
+            <p><span>Item code :</span>NVMP12</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 309/-</i></spanb>
+            <button onclick="hideelement('NON_VEG_main12')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+
+
+        
+    <!-- DESERTS -->
+
+
+    <div class="d1" id="DE1">
+            
+        <div class="nvm1_1">
+            
+            <img src="./deserts/Apple_Pie.jpg" height="300px" width="350px">
+        </div>
+        <div class="nvm1_11">
+            <h2>Apple-<span> Pie</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Classic dessert with a flaky crust and spiced apple filling, baked to perfection.</b></p>
+            <p><span>Ingredients:</span>Apples, cinnamon, sugar, pie crust.</p>
+            <p><span>Serving Style:</span>Served warm with a scoop of vanilla ice cream.</p>
+            <p><span>Item code :</span>DA1</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 199/-</i></spanb>
+            <button onclick="hideelement('DE1')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="d2" id="DE2">
+        
+        <div class="d2_1" >
+            
+            <img src="./deserts/Cheesecake.jpg" height="300px" width="350px">
+        </div>
+        <div class="d2_12">
+            <h2>Cheese <span>cake</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Rich and creamy dessert with a graham cracker crust, topped with seasonal fruits or sauces.</b></p>
+            <p><span>Ingredients:</span> Cream cheese, eggs, sugar, graham cracker crust.</p>
+            <p><span>Serving Style:</span> Served chilled with fruit or caramel sauce.</p>
+            <p><span>Item code :</span>DC2</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 229/-</i></spanb>
+            <button onclick="hideelement('DE2')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="d3" id="DE3">
+        
+        <div class="d3_1">
+            
+            <img src="./deserts/CLASSIC-CREAM-KUNAFA.jpg" height="300px" width="350px">
+        </div>
+        <div class="d3_12">
+            <h2>Classic Creamy <span>Kunafa</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Middle Eastern dessert with shredded phyllo dough and creamy filling, drizzled with syrup.</b></p>
+            <p><span>Ingredients:</span> Phyllo dough, cream, sugar syrup, pistachios.</p>
+            <p><span>Serving Style:</span>Served warm with a sprinkling of pistachios.</p>
+            <p><span>Item code :</span>DC3</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 239/-</i></spanb>
+            <button onclick="hideelement('DE3')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="d4" id="DE4">
+        
+        <div class="d4_1">
+
+            <img src="./deserts/Crème_Brûlée.avif" height="300px" width="350px">
+        </div>
+        <div class="d4_12">
+            <h2>Crème-<span>Brûlée</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Silky custard with a caramelized sugar crust, offering a perfect balance of sweetness and texture.</b></p>
+            <p><span>Ingredients:</span>Cream, vanilla, sugar, egg yolks.</p>
+            <p><span>Serving Style:</span>Served in a ramekin with a caramelized top.</p>
+            <p><span>Item code :</span>DC4</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 199/-</i></spanb>
+            <button onclick="hideelement('DE4')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="d5" id="DE5">
+        
+        <div class="d5_1">
+            
+            <img src="./deserts/Gulab_Jamun.jpg" height="300px" width="350px">
+        </div>
+        <div class="d5_12">
+            <h2>Gulab <span>Jamun</span>(2pcs)</h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Traditional Indian dessert made from khoya, fried and soaked in sugar syrup.</b></p>
+            <p><span>Ingredients:</span>Khoya, sugar syrup, cardamom.</p>
+            <p><span>Serving Style:</span>Served warm with syrup or ice cream.</p>
+            <p><span>Item code :</span>DG5</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 59/-</i></spanb>
+            <button onclick="hideelement('DE5')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+    <div class="d6" id="DE6">
+        
+        <div class="d6_1">
+            
+            <img src="./deserts/Chocolate_Lava_Cake.jpg" height="300px" width="350px">
+        </div>
+        <div class="d6_12">
+            <h2>Chocolate Lava<span> Cake</span></h2>
+            <p><i class="fa-solid fa-circle" height="2px" width="2px" style="padding-right: 20px;"></i><b>Warm chocolate cake with a molten center, offering a rich chocolate experience.</b></p>
+            <p><span>Ingredients:</span>Dark chocolate, flour, eggs, sugar.</p>
+            <p><span>Serving Style:</span>Served hot with a scoop of ice cream.</p>
+            <p><span>Item code :</span>DC6</p>
+            <spanb><i class="fa-sharp fa-solid fa-indian-rupee-sign"> 229/-</i></spanb>
+            <button onclick="hideelement('DE6')"><i class="fa-solid fa-trash">    R E M O V E </i></button>
+        </div>
+
+    </div>
+
+    <div class="input">
+        <input type="text" id="sear" class="input1" placeholder="Enter Product Code">
+        <input type="number" id="num" class="input2" placeholder="Enter Quantity">
+        <button onclick="final()">Add to Bill</button>
+    </div>
+
+    <!-- Bill Section -->
+    <div id="bill" class="bill" style="display: none;">
+        <div class="bill0">
+            <strong>Item:</strong> <span id="item1"></span>
+        </div>
+        <div class="bill1">
+            <strong>Price:</strong> ₹<span id="item1price"></span>
+        </div>
+        <div class="bill1">
+            <strong>Quantity:</strong> <span id="quan"></span>
+        </div>
+        <div class="bill12">
+            <strong>Total:</strong> ₹<span id="itemp"></span>
+        </div>
+    </div>
+
+    <footer class="py-5">
+        <div class="f1">
+            <img src="logo-dedelicieux-vertical.png" height="150px" width="200px" style="margin:0px 0px 20px 200px;">
+            <p>"Indulge in a culinary journey at our restaurant, where every bite is crafted to <br style="padding-top: 10px;">perfection in a stylish and inviting atmosphere."</p>
+        </div>
+        <div class="f1">
+          <p><h5 class="f2">quicklinks</h5><br><br><br>CURRENTSTOCK<br><br><br>previously sold<br><br><br>sell your cars<br><br><br>about<br><br><br>careers<br><br><br>contact</p>
+        </div>
+        <div class="f1">
+            <p><h5 class="f2">brands</h5><br><br><br>bmw<br><br><br>maserati<br><br><br>dodge<br><br><br>volvo<br><br><br>porsche<br><br><br>Mercedes-Benz</p>
+        </div>
+        <div class="f1">
+            <h5 class="f2">social</h5><br><br><i class="fa-brands fa-instagram"></i><br><br><i class="fa-brands fa-square-facebook"></i><br><br><i class="fa-brands fa-youtube"></i>
+        </div>
+    </footer>

@@ -1,0 +1,227 @@
+/* veg_start.css */
+.vS1{
+    display: none;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    margin: 1% 10%;
+    border-radius: 10px;
+    background-color: rgba(213, 216, 216, 0.587);
+    /* box-shadow: 0 0 15px rgba(211, 75, 75, 0.5), 0 0 30px rgba(255, 255, 255, 0.3); */
+}
+.vs1_1{
+    margin: 3%  1% 3% 4%;
+    
+}
+.vs1_11{
+    text-align: start;
+    
+    margin: 4% 7% 7% 1%;
+}
+p{
+    padding-top: 15px;
+    font-size: x-large;
+    font-weight: 500;
+    font-style: italic;
+}
+button{
+    font-size: large;
+    padding: 15px;
+    /* margin-left: 100%; */
+    margin-top: 2%;
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+spanb{
+    font-size: large;
+    padding: 15px 15px;
+    /* margin-left: 100%; */
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+h2{
+    text-align: start;
+    margin-bottom: 1%;
+}
+span{
+    color: red;
+}
+
+
+
+/* soups2 */
+.vs2{
+    display: none;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    margin: 1% 10%;
+    border-radius: 10px;
+    background-color: rgba(213, 216, 216, 0.587);
+    /* box-shadow: 0 0 15px rgba(211, 75, 75, 0.5), 0 0 30px rgba(255, 255, 255, 0.3); */
+}
+.vs2_1{
+    margin: 3%  1% 3% 4%;
+    
+}
+.vs2_12{
+    text-align: start;
+    
+    margin: 4% 7% 7% 1%;
+}
+
+/* soups3 */
+.vs3{
+    display: none;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    margin: 1% 10%;
+    border-radius: 10px;
+    background-color: rgba(213, 216, 216, 0.587);
+    /* box-shadow: 0 0 15px rgba(211, 75, 75, 0.5), 0 0 30px rgba(255, 255, 255, 0.3); */
+}
+.vs3_1{
+    margin: 3%  1% 3% 4%;
+    
+}
+.vs3_12{
+    text-align: start;
+    
+    margin: 4% 7% 7% 1%;
+}
+
+
+/* soups4 */
+.vs4{
+    display: none;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    margin: 1% 10%;
+    border-radius: 10px;
+    background-color: rgba(213, 216, 216, 0.587);
+    /* box-shadow: 0 0 15px rgba(211, 75, 75, 0.5), 0 0 30px rgba(255, 255, 255, 0.3); */
+}
+.vs4_1{
+    margin: 3%  1% 3% 4%;
+    
+}
+.vs4_12{
+    text-align: start;
+    
+    margin: 4% 7% 7% 1%;
+}
+
+/* soups5 */
+.vs5{
+    display: none;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    margin: 1% 10%;
+    border-radius: 10px;
+    background-color: rgba(213, 216, 216, 0.587);
+    /* box-shadow: 0 0 15px rgba(211, 75, 75, 0.5), 0 0 30px rgba(255, 255, 255, 0.3); */
+}
+.vs5_1{
+    margin: 3%  1% 3% 4%;
+    
+}
+.vs5_12{
+    text-align: start;
+    margin: 4% 7% 7% 1%;
+}
+
+
+/* soups6 */
+.vs6{
+    display: none;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    margin: 1% 10%;
+    border-radius: 10px;
+    background-color: rgba(213, 216, 216, 0.587);
+    /* box-shadow: 0 0 15px rgba(211, 75, 75, 0.5), 0 0 30px rgba(255, 255, 255, 0.3); */
+}
+.vs6_1{
+    margin: 3%  1% 3% 4%;
+    
+}
+.vs6_12{
+    text-align: start;
+    
+    margin: 4% 7% 7% 1%;
+}
+
+
+/* soups7 */
+.vs7{
+    display: none;
+    justify-content: space-evenly;
+    /* border: 2px solid black; */
+    margin: 1% 10%;
+    border-radius: 10px;
+    background-color: rgba(213, 216, 216, 0.587);
+    /* box-shadow: 0 0 15px rgba(211, 75, 75, 0.5), 0 0 30px rgba(255, 255, 255, 0.3); */
+}
+.vs7_1{
+    margin: 3%  1% 3% 4%;
+    
+}
+.vs7_12{
+    text-align: start;
+    
+    margin: 4% 7% 7% 1%;
+}
+
+/* soups8 */
+.vs8{
+    display: none;
+    justify-content: space-evenly;
+    margin: 1% 10%;
+    border-radius: 10px;
+    background-color: rgba(213, 216, 216, 0.587);
+    /* box-shadow: 0 0 15px rgba(211, 75, 75, 0.5), 0 0 30px rgba(255, 255, 255, 0.3); */
+}
+.vs8_1{
+    margin: 3%  1% 3% 4%; 
+}
+.vs8_12{
+    text-align: start;  
+    margin: 4% 7% 7% 1%;
+}
+
+/* soups9 */
+.vs9{
+    display: none;
+    justify-content: space-evenly;
+    margin: 1% 10%;
+    border-radius: 10px;
+    background-color: rgba(213, 216, 216, 0.587);
+    /* box-shadow: 0 0 15px rgba(211, 75, 75, 0.5), 0 0 30px rgba(255, 255, 255, 0.3); */
+}
+.vs9_1{
+    margin: 3%  1% 3% 4%; 
+}
+.vs9_12{
+    text-align: start;  
+    margin: 4% 7% 7% 1%;
+}
+
+/* soups10 */
+.vs10{
+    display: none;
+    justify-content: space-evenly;
+    margin: 1% 10%;
+    border-radius: 10px;
+    background-color: rgba(213, 216, 216, 0.587);
+    /* box-shadow: 0 0 15px rgba(196, 8, 8, 0.911), 0 0 30px rgba(255, 255, 255, 0.3); */
+}
+.vs10_1{
+    margin: 3%  1% 3% 4%; 
+}
+.vs10_12{
+    text-align: start;  
+    margin: 4% 7% 7% 1%;
+}
+
